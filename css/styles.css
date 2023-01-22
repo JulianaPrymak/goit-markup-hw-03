@@ -58,11 +58,6 @@ ul {
     background: var(--primary-white-color);
 }
 
-header{
-    padding-top: 24px;
-    padding-bottom: 24px;
-}
-
 .logo-web {
     color: var(--active-link-color);
 }
@@ -82,6 +77,13 @@ header{
     letter-spacing: 0.03em;
     text-transform: uppercase;
     margin-right: 76px;
+    
+}
+
+.header-container{
+    display: block;
+    padding-top: 24px;
+    padding-bottom: 24px;
 }
 
 .top-logo:hover,
@@ -190,7 +192,8 @@ header{
     width: 494px;
     margin-left: auto;
     margin-right: auto;
-
+    display: flex;
+    margin-bottom: 48px;
 }
 
 .section-one .main-button {
@@ -200,20 +203,12 @@ header{
     color: var(--primary-white-color);
     cursor: pointer;
     display: flex;
-    flex-direction: row;
-    align-items: flex-start;
     padding: 16px 32px;
-    gap: 10px;
     letter-spacing: 0.04em;
-    height: 56px;
     min-width: 169px;
-    left: 636px;
-    top: 428px;
-    content: 16px 32px;
-    margin-top: 48px;
     margin-left: auto;
     margin-right: auto;
-
+    border: none;
 
 }
 
@@ -228,15 +223,13 @@ header{
 
 .section-two{
     padding-top: 120px;
-    padding-left: auto;
-    padding-right: auto;
     padding-bottom: 120px;
     
 
 }
 
 
-.list-section-two {
+.list-second {
     display: flex;
     gap: 24px;
     align-items: center;
@@ -244,11 +237,11 @@ header{
 
 }
 
-.list-section-two .title-three {
+.list-second .title-three {
     max-width: 264px;
 }
 
-.title-section-two{
+.title-section{
     position: absolute;
     white-space: nowrap;
     width: 1px;
@@ -305,6 +298,8 @@ header{
 .team-list-item{
     width: calc((100%-3*24px)/4);
     text-align: center;
+    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+    border-radius: 0px 0px 4px 4px;
 }
 
 .title-two {
@@ -315,11 +310,21 @@ header{
     text-align: center;
     box-sizing: border-box;}
     
-
+.card{
+    display: block;
+    padding-top: 32px;
+    padding-bottom: 32px;
+    padding-left: 16px;
+    padding-right: 16px;
+}
 
 .section-four {
     background: var(--another-background-color);
+}
+
+.four-team{
     padding-top: 120px;
+    display: block;
     padding-bottom: 120px;
 }
 
@@ -352,7 +357,7 @@ padding-bottom: 100px;
 
 .section-one-portfolio{
     padding-top: 96px;
-    padding-bottom: 72px;
+    padding-bottom: 120px;
 }
 
 .section-one-portfolio .next-button {
@@ -389,6 +394,7 @@ padding-bottom: 100px;
     align-items: center;
     gap: 24px;
     margin-left: 250px;
+    margin-bottom: 72px;
 }
 
 .next-button .second{
@@ -415,9 +421,6 @@ padding-bottom: 100px;
     
 }
 
-.section-two-portfolio{
-padding-bottom: 120px;
-}
 
 .portfolio-list{
     display: flex;
@@ -428,7 +431,7 @@ padding-bottom: 120px;
 
 .portfolio-list-item{
     width: calc((100%-2*24px)/3); 
-    border: 1px solid var(--border-bottom-color);
+    
     max-width: 360px;
     background-color: var(--primary-white-color);
 }
@@ -437,4 +440,13 @@ padding-bottom: 120px;
     text-align: center;
     box-sizing: border-box;
     margin-top: 32px;
+}
+
+.card-portfolio{
+    display: block;
+    padding-top: 32px;
+    padding-bottom: 32px;
+    padding-left: 16px;
+    padding-right: 16px;
+    border: 1px solid var(--border-bottom-color);
 }
