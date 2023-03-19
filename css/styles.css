@@ -4,7 +4,7 @@
 /* title color: #FFFFFF */
 /* footer color: CORNFLOWER #E7E9FC */
 
-*{box-sizing: border-box;}
+
 h1, h2, h3, h4, h5, h6, p {margin: 0;}
 
 img{
@@ -56,6 +56,8 @@ ul {
 .top {
     border-bottom: 1px solid var(--border-bottom-color);
     background: var(--primary-white-color);
+    padding-top: 24px;
+    padding-bottom: 24px;
 }
 
 .logo-web {
@@ -72,7 +74,7 @@ ul {
     font-weight: 800;
     font-size: 18px;
     line-height: 1.33;
-    display: flex;
+    
     align-items: center;
     letter-spacing: 0.03em;
     text-transform: uppercase;
@@ -82,8 +84,7 @@ ul {
 
 .header-container{
     display: block;
-    padding-top: 24px;
-    padding-bottom: 24px;
+    
 }
 
 .top-logo:hover,
@@ -152,12 +153,13 @@ ul {
 .header-menu{
     display: flex;
     align-items: center;
+    margin-right: auto;
 }
 
 .menu{
     display: flex;
     align-items: center;
-    margin-right: 332px;
+    
     gap: 40px;
 }
 
@@ -192,7 +194,6 @@ ul {
     width: 494px;
     margin-left: auto;
     margin-right: auto;
-    display: flex;
     margin-bottom: 48px;
 }
 
@@ -202,7 +203,7 @@ ul {
     border-radius: 4px;
     color: var(--primary-white-color);
     cursor: pointer;
-    display: flex;
+    display: block;
     padding: 16px 32px;
     letter-spacing: 0.04em;
     min-width: 169px;
@@ -238,7 +239,8 @@ ul {
 }
 
 .list-second .title-three {
-    max-width: 264px;
+    margin-bottom: 8px;
+    width: calc((100% - 24px * 3) / 4);
 }
 
 .title-section{
@@ -263,8 +265,15 @@ ul {
 
 /*for other*/
 
+.section-three{
+    padding-bottom: 120px;
+}
+
+.title-two{
+    margin-bottom: 72px;
+}
+
 .list-section-three{
-    padding-top: 72px;
     padding-bottom: 72px;
     display: flex;
     gap: 24px;
@@ -272,34 +281,27 @@ ul {
     
 }
 
-.container .section-three{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
+
 
 .list-section-item{
-    width: calc((100%-2*24px)/3);
+    width: calc((100% - 2 * 24px) / 3);
 }
 
-.team{
-    list-style: none;
-    margin-top: 72px;    
-    
-}
+
 
 .team-list{
     display: flex;
     align-items: center;
     gap: 24px;
-    
+    margin-top: 72px;
 }
 
 .team-list-item{
-    width: calc((100%-3*24px)/4);
+    width: calc((100% - 3 * 24px) / 4);
     text-align: center;
     box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
     border-radius: 0px 0px 4px 4px;
+    background-color: var(--primary-white-color);
 }
 
 .title-two {
@@ -318,14 +320,20 @@ ul {
     padding-right: 16px;
 }
 
+.names{
+margin-bottom: 8px;
+}
+
 .section-four {
     background: var(--another-background-color);
+    padding-top: 120px;
+    padding-bottom: 120px;
 }
 
 .four-team{
-    padding-top: 120px;
+    
     display: block;
-    padding-bottom: 120px;
+    
 }
 
 /*for footer*/
@@ -338,7 +346,7 @@ ul {
     font-family: 'Roboto';
     font-style: normal;
     color: var(--border-bottom-color);
-    display: inline-block;
+    
     margin-top: 16px;
     width: 264px;
 }
@@ -354,6 +362,10 @@ padding-bottom: 100px;
 
 
 /* portfolio classes*/
+
+.title-porto{
+    visibility: hidden;
+}
 
 .section-one-portfolio{
     padding-top: 96px;
@@ -371,7 +383,7 @@ padding-bottom: 100px;
     justify-content: center;
     align-items: center;
     padding: 12px 24px;
-    min-width: 116px;
+    
     height: 48px;
     text-align: center;
     letter-spacing: 0.04em;
@@ -384,16 +396,14 @@ padding-bottom: 100px;
 .next-button:focus {
     background: var(--background-buttons-color);
     color: var(--primary-white-color);
-    font-family: 'Roboto';
-    font-style: normal;
-
+    border-color: transparent;
 }
 
 .button-container{
     display: flex;
     align-items: center;
     gap: 24px;
-    margin-left: 250px;
+    justify-content: center;
     margin-bottom: 72px;
 }
 
@@ -430,16 +440,22 @@ padding-bottom: 100px;
 }
 
 .portfolio-list-item{
-    width: calc((100%-2*24px)/3); 
+    width: calc((100% - 2 * 24px) / 3); 
     
     max-width: 360px;
     background-color: var(--primary-white-color);
 }
 
-.title-three text{
+.text1{
     text-align: center;
     box-sizing: border-box;
     margin-top: 32px;
+    margin-bottom: 8px;
+}
+
+.text2{
+    text-align: center;
+    box-sizing: border-box;
 }
 
 .card-portfolio{
@@ -449,4 +465,5 @@ padding-bottom: 100px;
     padding-left: 16px;
     padding-right: 16px;
     border: 1px solid var(--border-bottom-color);
+    border-top: none;
 }
